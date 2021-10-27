@@ -11,8 +11,15 @@ body {
 }
 .titulo {
   background-color: rgb(156, 39, 176);
+  margin-bottom: 20px;
 }
 .icone {
   margin-left: 10px;
   margin-right: 20px;
+}
+.container {
+  padding: 20px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 8px;
 }
