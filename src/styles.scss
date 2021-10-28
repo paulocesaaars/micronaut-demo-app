@@ -8,12 +8,13 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: rgb(50, 50, 50);
+  color: white;
 }
-.titulo {
+.title {
   background-color: rgb(156, 39, 176);
   margin-bottom: 20px;
 }
-.icone {
+.icon {
   margin-left: 10px;
   margin-right: 20px;
 }
@@ -21,5 +22,19 @@ body {
   padding: 20px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  border-radius: 8px;
+}
+.container-button {
+  display: flex;
+  width: 100%;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+.card {
+  background-color: rgb(60, 60, 60);
+  padding: 20px 20px;
+}
+.form-input {
+  display: grid;
+  width: 100%;
 }

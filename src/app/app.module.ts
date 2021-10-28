@@ -16,10 +16,22 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TitleComponent } from './components/title/title.component';
+import { UserListComponent } from './pages/user/user-list/user-list.component';
+import { UserEditComponent } from './pages/user/user-edit/user-edit.component';
+import { UserNewComponent } from './pages/user/user-new/user-new.component';
+import { UserViewComponent } from './pages/user/user-view/user-view.component';
+import { UserService } from './services/userService';
+import { UserResolve } from './pages/user.resolve';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TitleComponent,
+    UserListComponent,
+    UserEditComponent,
+    UserNewComponent,
+    UserViewComponent
   ],
   imports: [
     CommonModule,
@@ -38,7 +50,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatSlideToggleModule,
     MatTableModule
   ],
-  providers: [],
+  providers: [
+    UserService,
+    UserResolve
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
